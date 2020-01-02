@@ -17,8 +17,7 @@
     <title>Cielo PHP Challenge</title>
     <style>
         .error {
-            color: red;
-            margin-left: 5px;
+            color: #dc3545;
         }
 
         label.error {
@@ -41,18 +40,24 @@
     <div class="row">
         <div class="col-md-4 mx-auto">
             <div class="myform form ">
-                <form action="" method="post" id="register_user" name="register_user">
+
+                <?php echo validation_errors(); ?>
+
+                <?php echo form_open('save', 'class="email" id="register_user" name="register_user"'); ?>
                     <div class="form-group">
                         <label>Name:</label>
                         <input type="text" name="name"  class="form-control my-input" id="name" placeholder="Name" required>
+                        <span id="name_error" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label>Date of birth:</label>
                         <input type='text' name="date_of_birth"  class="form-control" id="date_of_birth" placeholder='Select Date' required>
+                        <span id="dob_error" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label>Email:</label>
                         <input type="email" name="email"  class="form-control my-input" id="email" placeholder="Email required">
+                        <span id="email_error" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label>Favorite Color:</label>
@@ -64,13 +69,14 @@
                             <option value="black">Black</option>
                             <option value="white">White</option>
                         </select>
+                        <span id="color_error" class="text-danger"></span>
                     </div>
                     <div class="text-center ">
                         <button id="saveuser" type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
                     </div>
                 </form>
             </div>
-            <div class="alert alert-success" style="display: none; margin-top: 10px;">User saved successfully!</div>
+            <span id="success_message" style="display: none;"></span>
             <div class="alert alert-danger" style="display: none; margin-top: 10px;">Oh! An error has occurred. Please contact the Administrator.</div>
         </div>
     </div>
