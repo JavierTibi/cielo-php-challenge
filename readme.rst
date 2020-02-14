@@ -11,21 +11,6 @@ you creatively focus on your project by minimizing the amount of code needed
 for a given task.
 
 *******************
-Release Information
-*******************
-
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
 Server Requirements
 *******************
 
@@ -50,21 +35,22 @@ Please see the `license
 agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
 
 *********
-Resources
+Goals Coding Challenge
 *********
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+Build us a sample CI application, including a page that has a form, with the
+following fields:
+* Name
+* Date of Birth
+* Email
+* Favorite Color
+* Submit Button
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+Perform some client-side validation using jQuery (with jquery.validate or the
+like), and some server-side validation on your choice of fields.
 
-***************
-Acknowledgement
-***************
+Create a MySQL table with the same fields to catch this data.
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Insert validated form data to the MySQL table, and display a friendly success
+message - you must use AJAX here to provide a clean experience for the user
+that does not reload the page.
