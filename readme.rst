@@ -1,6 +1,28 @@
-###################
-What is CodeIgniter
-###################
+######################
+Goals Coding Challenge
+######################
+
+Build us a sample CI application, including a page that has a form, with the
+following fields:
+* Name
+* Date of Birth
+* Email
+* Favorite Color
+* Submit Button
+
+Perform some client-side validation using jQuery (with jquery.validate or the
+like), and some server-side validation on your choice of fields.
+
+Create a MySQL table with the same fields to catch this data.
+
+Insert validated form data to the MySQL table, and display a friendly success
+message - you must use AJAX here to provide a clean experience for the user
+that does not reload the page.
+
+
+***********
+CodeIgniter
+***********
 
 CodeIgniter is an Application Development Framework - a toolkit - for people
 who build web sites using PHP. Its goal is to enable you to develop projects
@@ -34,23 +56,4 @@ License
 Please see the `license
 agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
 
-*********
-Goals Coding Challenge
-*********
 
-Build us a sample CI application, including a page that has a form, with the
-following fields:
-* Name
-* Date of Birth
-* Email
-* Favorite Color
-* Submit Button
-
-Perform some client-side validation using jQuery (with jquery.validate or the
-like), and some server-side validation on your choice of fields.
-
-Create a MySQL table with the same fields to catch this data.
-
-Insert validated form data to the MySQL table, and display a friendly success
-message - you must use AJAX here to provide a clean experience for the user
-that does not reload the page.
